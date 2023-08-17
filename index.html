@@ -1,9 +1,69 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+<style>
+.grid-container { 
+    display: grid; 
+    grid-template-columns: 1.5fr 3fr; 
+    grid-gap: 0px; 
+    border: 1px solid black; 
+    width: auto; 
+    height:auto;
+} 
+.tab-grid {
+   	margin-left: 10px; 
+    background-color: #C8BDBB;
+    text-align: left;
+    padding-left:20px;
+}  
+.info-grid {
+    margin-left:: 10px;  
+ 	background-color: #E3DBD9;
+    text-align: center;
+
+}
+
+.tablinks{
+  display: block;
+  background-color: inherit;
+  color: black;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+/* Change background color of buttons on hover */
+.tablinks:hover {
+  background-color:#BCB7B5;
+}
+
+/* Create an active/current "tab button" class */
+.tablinks.active {
+  background-color: #ccc;
+}
+
+</style>
+</head>
+
 <body>
 
-<h1>Palak Shrivastava</h1>
-<p>My first paragraph.</p>
+<div class="grid-container">
+
+    <div class="tab-grid">
+    <h1> Palak </h1>
+     <button class="tablinks" onclick="openSection(event, 'Home')" id="defaultOpen">Home</button>
+     <button class="tablinks" onclick="openSection(event, 'About')" id="defaultClosed">About</button>
+    </div>
+    
+    <div class="info-grid"></div>
+  
+</div>
 
 </body>
 </html>
