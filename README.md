@@ -1,3 +1,3 @@
 # Bio
-Created for testing
-Line 1 added on github
+
+Created to genarate a self Bio using Html, css, Javascript
